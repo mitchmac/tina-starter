@@ -25,7 +25,7 @@ const TinaWrapper = (props) => {
   // TODO: handle when localStorage is missing
   const clientID = localStorage.getItem('tinaClientID') ? localStorage.getItem('tinaClientID') : process.env.NEXT_PUBLIC_TINA_CLIENT_ID;
   const organization = localStorage.getItem('tinaOrganization') ? localStorage.getItem('tinaOrganization') : process.env.NEXT_PUBLIC_ORGANIZATION_NAME;
-  
+
   return (
     <TinaCloudProvider
       clientId={clientID}
